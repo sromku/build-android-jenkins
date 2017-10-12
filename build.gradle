@@ -15,9 +15,19 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
+        maven {
+            url "https://maven.google.com"
+        }
     }
 }
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+
+ext {
+    minSdkVersion = 21
+    targetSdkVersion = 26
+    compileSdkVersion = 26
+    buildToolsVersion = '26.0.2'
 }
