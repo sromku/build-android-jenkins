@@ -44,16 +44,16 @@ elif [ $buildType = 'release' ]; then
 fi
 
 # post build
-mobileFileName="mobile-$buildType.apk"
+apkFileName="app-$buildType.apk"
 
 # -------------------------------------
 ### CHECK THAT APK FILE EXISTS
-if [ ! -e "mobile/build/outputs/apk/$mobileFileName" ]; then
-    echo "ERROR: File not exists: (mobile/build/outputs/apk/$mobileFileName)"
+if [ ! -e "app/build/outputs/apk/$buildType/$apkFileName" ]; then
+    echo "ERROR: File not exists: (app/build/outputs/apk/$buildType/$apkFileName)"
     exit 1
 fi
 
 # copy mobile apk
 rm -r artifacts/
 mkdir artifacts
-cp mobile/build/outputs/apk/$mobileFileName artifacts/
+cp mobile/build/outputs/apk/$buildType/$apkFileName artifacts/
