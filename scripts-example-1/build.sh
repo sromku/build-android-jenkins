@@ -54,4 +54,6 @@ if [ ! -e "mobile/build/outputs/apk/$mobileFileName" ]; then
 fi
 
 # copy mobile apk
+rm -r artifacts/
+mkdir artifacts
 cp mobile/build/outputs/apk/$mobileFileName artifacts/
