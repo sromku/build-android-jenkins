@@ -11,9 +11,10 @@ This is a sample app and tools for blog posts about full cycle of building Andro
 - [Part 3 - Run and present lint, static analysis and tests of Android builds](#) - WIP
 - [Part 4 - Versioning, tagging and auditing Android builds](#) - WIP
 - [Part 5 - Must Jenkins enhancements and plugins](#) - WIP
+- [Part 6 - Notifying on Slack, uploading artifacts to cloud storage](#) - WIP
 
 ### WIP
 
 Parts 1-2 are ready.
-Parts 3-5 are in progress.
+Parts 3-6 are in progress.
 
