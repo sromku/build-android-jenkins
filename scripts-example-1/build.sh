@@ -17,12 +17,12 @@ chmod +x ${propertiesFile}
 
 # update key properties based on build type
 if [ $buildType = 'debug' ]; then
-	(setProperty "KEYSTORE" "keystore/debug.keystore")
+	(setProperty "KEYSTORE" "debug.keystore")
 	(setProperty "STORE_PASSWORD" "123456")
 	(setProperty "KEY_ALIAS" "my_alias")
 	(setProperty "KEY_PASSWORD" "123456")
 elif [ $buildType = 'release' ]; then
-	(setProperty "KEYSTORE" "keystore/release.keystore")
+	(setProperty "KEYSTORE" "release.keystore")
 	(setProperty "STORE_PASSWORD" "$storePass")
 	(setProperty "KEY_ALIAS" "$keyAlias")
 	(setProperty "KEY_PASSWORD" "$keyPass")
@@ -31,10 +31,6 @@ fi
 # clean project
 chmod +x gradlew
 ./gradlew clean --stacktrace
-
-# give access to keystore
-chmod +x keystore/debug.keystore
-chmod +x keystore/release.keystore
 
 # build
 if [ $buildType = 'debug' ]; then
