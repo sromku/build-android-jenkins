@@ -53,7 +53,7 @@ if [ ! -e "app/build/outputs/apk/$buildType/$apkFileName" ]; then
     exit 1
 fi
 
-# copy mobile apk
+# copy apk to artifacts
 rm -r artifacts/
 mkdir artifacts
-cp mobile/build/outputs/apk/$buildType/$apkFileName artifacts/
+cp app/build/outputs/apk/$buildType/$apkFileName artifacts/
