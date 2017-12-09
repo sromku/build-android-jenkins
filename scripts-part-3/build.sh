@@ -74,8 +74,8 @@ cp app/build/outputs/apk/$buildType/$apkFileName artifacts/
 
 # copy lint results
 if [ ! -e "app/build/reports/lint-results.xml" ]; then
-	echo "ERROR: File not exists: (app/build/reports/lint-results.xml)"
-	exit 1
+    echo "ERROR: File not exists: (app/build/reports/lint-results.xml)"
+    exit 1
 fi
 cp app/build/reports/lint-results.xml report/
 
