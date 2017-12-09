@@ -42,4 +42,4 @@ This is a sample app and tools for blog posts about full cycle of building Andro
 ### WIP
 
 Parts 1-3 are ready.
-Parts 4-6 are in progress.
+Parts 4-8 are in progress.
