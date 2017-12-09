@@ -29,6 +29,14 @@ This is a sample app and tools for blog posts about full cycle of building Andro
         <td width="50%" valign="top"><a href="#"><strong>Part 5 - Must Jenkins job enhancements and plugins</strong></a><br/> WIP</td>
         <td width="50%" valign="top"><a href="#"><strong>Part 6 - Notifying on Slack, uploading artifacts to cloud storage</strong></a><br/> WIP</td>
     </tr>
+    <tr>
+        <td width="50%"><img width="100%" src="assets/build-android-wip.png"/></td>
+        <td width="50%"><img width="100%" src="assets/build-android-wip.png"/></td>
+    </tr>
+    <tr>
+        <td width="50%" valign="top"><a href="#"><strong>Part 7 - Build and run UI Automation tests on multiple devices</strong></a><br/> WIP</td>
+        <td width="50%" valign="top"><a href="#"><strong>Part 8 - Setup and run `Infer` static analysis</strong></a><br/> WIP</td>
+    </tr>
 </table>
 
 ### WIP
