@@ -1,5 +1,3 @@
-<img src="assets/jenkins-android.png">
-
 ### Build Android using Jenkins
 
 This is a sample app and tools for blog posts about full cycle of building Android from Jenkins.
