@@ -12,6 +12,9 @@ setProperty() {
 	sed -i.bak -e "s/\($1 *= *\).*/\1$2/" ${propertiesFile}
 }
 
+# -----------------------------------------------------------------
+# ------------------------------ BUILD ----------------------------
+# -----------------------------------------------------------------
 propertiesFile='gradle.properties'
 chmod +x ${propertiesFile}
 
@@ -39,17 +42,16 @@ elif [ $buildType = 'release' ]; then
 	./gradlew assembleRelease --stacktrace
 fi
 
-# post build
+# -----------------------------------------------------------------
+# -------------------------- POST BUILD ---------------------------
+# -----------------------------------------------------------------
 apkFileName="app-$buildType.apk"
+rm -r artifacts/
+mkdir artifacts
 
-# -------------------------------------
-### CHECK THAT APK FILE EXISTS
+# copy apk to artifacts
 if [ ! -e "app/build/outputs/apk/$buildType/$apkFileName" ]; then
     echo "ERROR: File not exists: (app/build/outputs/apk/$buildType/$apkFileName)"
     exit 1
 fi
-
-# copy apk to artifacts
-rm -r artifacts/
-mkdir artifacts
 cp app/build/outputs/apk/$buildType/$apkFileName artifacts/
