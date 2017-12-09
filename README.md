@@ -18,7 +18,7 @@ This is a sample app and tools for blog posts about full cycle of building Andro
         <td width="50%"><img width="100%" src="assets/build-android-wip.png"/></td>
     </tr>
     <tr>
-        <td width="50%" valign="top"><a href="https://www.sromku.com/blog/build-android-jenkins"><strong>Part 3 - Run lint and test checks of Android builds from Jenkins</strong></a><br/> Setup and configure lint checks, build and run tests across all modules, collect and present reports on Jenkins.</td>
+        <td width="50%" valign="top"><a href="https://www.sromku.com/blog/build-android-jenkins"><strong>Part 3 - Run lint and unit tests of Android builds from Jenkins</strong></a><br/> Setup and configure lint checks, build and run tests across all modules, collect and present reports on Jenkins.</td>
         <td width="50%" valign="top"><a href="#"><strong>Part 4 - Versioning, tagging and auditing Android builds</strong></a><br/> WIP</td>
     </tr>
     <tr>
