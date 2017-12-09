@@ -44,7 +44,11 @@ This is a sample app and tools for blog posts about full cycle of building Andro
 Parts 1-3 are ready.
 Parts 4-8 are in progress.
 
+### Author
+
+Roman Kushnarenko - [sromku](https://github.com/sromku)
+
 ### RSS
 
-<a href="https://www.sromku.com/rss"><img width="150px" src="assets/rss"/></a>
+<a href="https://www.sromku.com/rss"><img width="100px" src="assets/rss.png"/></a>
 
